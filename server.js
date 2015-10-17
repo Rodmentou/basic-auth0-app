@@ -8,13 +8,7 @@ var jwtCheck = jwt({
   audience: CONFIG.CLIENT_ID
 });
 
-
-process.env.NODE_ENV = 'prod';
-
-app.get('/', function (req, res) {
-	res.json({success: true, message: 'Index page.'});
-});
-
+app.use(express.static(__dirname + '/public'));
 app.use('/api', jwtCheck);
 
 app.get('/api/pow', function (req, res) {
@@ -22,6 +16,6 @@ app.get('/api/pow', function (req, res) {
 });
 
 
-app.listen(8080, function () {
+app.listen(3001, function () {
 	console.log('Server running!');
 });
