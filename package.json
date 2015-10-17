@@ -1,0 +1,29 @@
+{
+  "name": "basic-auth0-app",
+  "version": "1.0.0",
+  "description": "0.1",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodmentou/basic-auth0-app.git"
+  },
+  "keywords": [
+    "angular",
+    "node",
+    "api",
+    "auth0"
+  ],
+  "author": "Rodmentou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rodmentou/basic-auth0-app/issues"
+  },
+  "homepage": "https://github.com/Rodmentou/basic-auth0-app#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-jwt": "^3.1.0"
+  }
+}
