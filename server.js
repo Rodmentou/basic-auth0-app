@@ -9,6 +9,9 @@ var jwtCheck = jwt({
 });
 
 app.use(express.static(__dirname + '/public'));
+
+
+
 app.use('/api', jwtCheck);
 
 app.get('/api/pow', function (req, res) {
